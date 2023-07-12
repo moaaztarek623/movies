@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, body{
+    transition: all 0.3s;
+    font-family: "Cairo";
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.cairo{
+    font-family: "Cairo";
+}
+
+.bg-custom{
+    background-color: rgb(15 23 42);
+}
+.img-card{
+     ul{
+        width: 100%;
+        bottom: -150%;
+        li{
+            text-align: center;
+        }
+    }
+    div.overlay{
+        opacity: 0;
+    }
+    &:hover{
+        div.overlay{
+
+            opacity: 1;
+        }
+        ul{
+                bottom: 0;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                top: 50%;
+        }
+      
+}
+}
